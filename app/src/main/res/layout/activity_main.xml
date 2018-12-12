@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/title_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/new_list"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="150sp"
+            android:background="@color/colorBlue"
+            android:text="@string/new_list" />
+
+        <Button
+            android:id="@+id/existing_list"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="255sp"
+            android:background="@color/colorBlue"
+            android:text="@string/existing_list" />
+
+    </RelativeLayout>
+</RelativeLayout>

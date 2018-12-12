@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Shopping list</string>
+    <string name="new_list">Сознадь новый список покупок</string>
+    <string name="existing_list">Редактировать прошлые списки</string>
+    <string name="title_main">Создай свой список покупок или измени уже существующий</string>
+    </resources>
