@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.alexandr.gurenko.myapplication">
 
     <application
@@ -9,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:versionCode="2"
-        android:versionName="0.0.2">
+        android:versionName="0.0.2"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".AddItemActivity"></activity>
         <activity
             android:name=".MainActivity"

@@ -219,14 +219,14 @@ public class ExistingListActivity extends AppCompatActivity implements View.OnCl
         listItemView.setVisibility(View.VISIBLE);
         nameList.setText(string);
 
-        MyAdapter maa = null;
+        ListAdapter maa = null;
         List<String> tmp = new ArrayList<>();
         if(listItems != null){
             for (int i = 0; i < listItems.size(); i++){
                 tmp.add(listItems.get(i).getItem());
             }
             adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, tmp);
-            maa = new MyAdapter(this, tmp);
+            maa = new ListAdapter(this, tmp);
         }
         listItemView.setAdapter(maa);
     }
