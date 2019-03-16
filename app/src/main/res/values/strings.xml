@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">Shopping list</string>
-    <string name="new_list">Сознадь новый список покупок</string>
-    <string name="existing_list">Редактировать прошлые списки</string>
-    <string name="title_main">Создай свой список покупок или измени уже существующий</string>
-    </resources>
+    <string name="app_name">Список покупок</string>
+    <string name="new_list">Создать список</string>
+    <string name="existing_list">Сохраненные списки</string>
+    <string name="title_main">Создай свой список покупок, а то постоянно все забываешь! :)</string>
+    <string name="what_to_buy">Что покупаем?</string>
+    <string name="add">+</string>
+    <string name="save_list">Сохранить список</string>
+    <string name="back">Назад</string>
+    <string name="empty_list">Список пуст...</string>
+    <string name="empty_list_name">Нет сохраненных списков...</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="exit_message">Нажмите еще раз для выхода</string>
+    <string name="add_items_in_list">Добавить покупки</string>
+    <string name="del_list">Удалить список</string>
+    <string name="create_new_list">Создать новый список</string>
+    <string name="del_all_lists">Удалить все списки</string>
+    <string name="add_existing_list">Добавить</string>
+
+</resources>

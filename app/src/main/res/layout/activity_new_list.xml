@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NewListActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/new_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="@string/what_to_buy"
+            android:importantForAutofill="no" tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/add_item"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/new_item"
+            android:background="@drawable/btn_main"
+            android:textColor="@color/White"
+            android:text="@string/add"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_main"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/save_list"
+        android:textColor="@color/White"/>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+
+</LinearLayout>
