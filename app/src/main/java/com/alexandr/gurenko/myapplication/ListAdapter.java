@@ -1,10 +1,18 @@
 package com.alexandr.gurenko.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.RadioGroup;
+import android.widget.TextClock;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -38,9 +46,35 @@ public class ListAdapter extends BaseAdapter {
         return position;
     }
 
-    //
+    // пункты списка
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        View view = convertView;
+        if(view == null)
+            view = layoutInflater.inflate(R.layout.item, parent, false);
+
+        ListItem listItem = getProduct(position);
+
+        TextView tmp =  view.findViewById(R.id.tvItemName);
+        tmp.setText(listItem.getItem());
+        CheckBox checkBox = view.findViewById(R.id.checkBoxItem);
+        checkBox.setOnCheckedChangeListener(myCheckChangeList);
+        checkBox.setTag(position);
+
+        if(checkBox.isChecked())
+            tmp.setPaintFlags(tmp.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
+        return view;
     }
+
+    ListItem getProduct(int position){
+        return (ListItem) getItem(position);
+    }
+
+    OnCheckedChangeListener myCheckChangeList = new OnCheckedChangeListener(){
+        @Override
+        public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+
+        }
+    };
 }
