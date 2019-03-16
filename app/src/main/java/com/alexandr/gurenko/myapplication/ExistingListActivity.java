@@ -63,7 +63,6 @@ public class ExistingListActivity extends AppCompatActivity implements View.OnCl
             if (listNames.isEmpty()) {
                 Toast.makeText(ExistingListActivity.this, R.string.empty_list_name, Toast.LENGTH_SHORT).show();
                 finish();
-                return;
             }
         }
     }
@@ -219,16 +218,14 @@ public class ExistingListActivity extends AppCompatActivity implements View.OnCl
         listItemView.setVisibility(View.VISIBLE);
         nameList.setText(string);
 
-        ListAdapter maa = null;
         List<String> tmp = new ArrayList<>();
         if(listItems != null){
             for (int i = 0; i < listItems.size(); i++){
                 tmp.add(listItems.get(i).getItem());
             }
             adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, tmp);
-            maa = new ListAdapter(this, tmp);
         }
-        listItemView.setAdapter(maa);
+        listItemView.setAdapter(adapter);
     }
 
     private void listNameAdapter(List<ListName> listNames){
