@@ -1,0 +1,9 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Project 'SocketCanJNI-master'" />
+    <option name="defaultScopeName" value="Project 'SocketCanJNI-master'" />
+    <option name="localWholeWordsOnly" value="true" />
+    <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
+    <option name="SEARCH_SCOPE" value="Project 'SocketCanJNI-master'" />
+  </component>
+</application>
